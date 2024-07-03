@@ -1,25 +1,18 @@
-# Node Typescript Starter
+# EXPRESS_TUTORIAL
 
-This project contains a minimal starter for Node.js project with Typescript, ESLint and Prettier already configured
 
-## Prerequisites
-- Node.js 16+
-- Yarn or NPM
 
-## Installation
-- Install dependencies
-```bash
-yarn install
+# enviroment variables
 ```
-
-- Create application configuration
-```bash
-cp .env.example .env
-nano .env
+MONGO_DB_URI=
+PORT=5000
+NODE_ENV=
+JWT=""
+JWT_REFRESH=
+SMTP_HOST=
+SMTP_PORT=
+SMTP_SERVICE=
+SMTP_MAIL=
+SMTP_PASSWORD=
+VERIFICATION_CODE_EXP=
 ```
-
-- Start Application
-```bash
-yarn start
-```
-The application will be launched by [Nodemon](https://nodemon.com). It will restart automatically on file change

@@ -1,30 +1,50 @@
 {
-  "name": "node-typescript-starter",
+  "name": "express_tutorial",
   "version": "1.0.0",
-  "description": "Node project starter with Typescript, ESLint and Prettier",
+  "description": "This is a comprenshive guide of express backend tutorial",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
-    "start": "nodemon --watch \"*.ts\" --exec \"ts-node\" ./src/index.ts",
-    "eslint:fix": "eslint --fix"
+    "dev": "nodemon index.ts",
+    "start": "tsc & node dist/index.js",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrermi12/EXPRESS_TUTORIAL.git"
+  },
+  "keywords": [
+    "Express"
+  ],
+  "author": "Ermias Asmare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrermi12/EXPRESS_TUTORIAL/issues"
+  },
+  "homepage": "https://github.com/jrermi12/EXPRESS_TUTORIAL#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.3",
+    "winston": "^3.13.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/node": "^18.15.2",
-    "@typescript-eslint/eslint-plugin": "^5.55.0",
-    "@typescript-eslint/parser": "^5.55.0",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-sort-destructure-keys": "^1.5.0",
-    "nodemon": "^2.0.21",
-    "prettier": "^2.8.4",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "mongoose": "^7.0.1"
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
