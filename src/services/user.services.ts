@@ -42,7 +42,7 @@ export async function createUser(userData: Partial<IUser>) {
         console.log("result", result)
         return { data: result, success: true };
     } catch (error) {
-        return { data: null, success: false, error };
+        throw new Error(error)
     }
 }
 
@@ -56,7 +56,7 @@ export async function updateUserById(
         const result = await UserModel.findByIdAndUpdate(id, update, options);
         return { data: result, success: true };
     } catch (error) {
-        return { data: null, success: false, error };
+        throw new Error(error)
     }
 }
 

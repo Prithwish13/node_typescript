@@ -1,4 +1,5 @@
 import { object, string, TypeOf, date } from "zod";
+
 export const registerUserSchema = object({
     body: object({
         name: string({ required_error: "Should have name" }).min(1, { message: 'name should have at least 1 character' }).max(20, { message: 'First name should have at most 20 characters' }),

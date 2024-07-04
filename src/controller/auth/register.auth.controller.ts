@@ -25,6 +25,10 @@ export const registerUser = asyncHandler(async (req: Request<object, object, reg
   
     const roles = await getAllRole()
     const role = roles.find(r => r.name === "SUPER_ADMIN")
+
+    if(!role){
+      throw new BadRequestError('No role found', ErrorCode.BAD_REQUEST)
+    }
   
     // Hash the password
     const salt = await bcrypt.genSalt(10);

@@ -15,6 +15,4 @@ export const bootstrap = async (app) => {
 
     EventEmitterInstance.on("signup", signUpSubscriber);
     EventEmitterInstance.on("forgot", forgetPasswordSubscriber);
-
-    
 };

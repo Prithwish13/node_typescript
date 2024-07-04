@@ -22,7 +22,7 @@ export const bootstrapExpress = (app: any) => {
     app.use(helmet.contentSecurityPolicy({
         directives: {
             defaultSrc: ["'self'"],
-            scriptSrc: ["'self'", "'trusted-cdn.com'"],
+            scriptSrc: ["'self'", "'https://getbootstrap.com/'"],
             objectSrc: ["'none'"],
             upgradeInsecureRequests: [],
         },
